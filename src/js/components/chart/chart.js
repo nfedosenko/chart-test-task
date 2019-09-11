@@ -28,7 +28,7 @@ export class BarChart {
   }
 
   /**
-   *
+   * Initial render function, called on creating on new instance of BarChart
    */
   render() {
     const total = this.values.reduce((a, b) => a + b, 0);
@@ -43,7 +43,7 @@ export class BarChart {
   }
 
   /**
-   *
+   * Renders the root svg element at the parent container
    * @private
    */
   _renderSvg() {
@@ -58,7 +58,7 @@ export class BarChart {
   }
 
   /**
-   *
+   * Renders colored groups from the dataset and gray group for the rest if values sum is less than 100
    * @param dataset
    * @param restForDataset
    * @private
@@ -87,7 +87,7 @@ export class BarChart {
   }
 
   /**
-   *
+   * Renders data rects of chart due to dataset provided
    * @param dataset
    * @private
    */
@@ -113,7 +113,7 @@ export class BarChart {
   }
 
   /**
-   *
+   * Renders marker lines on the chart
    * @private
    */
   _renderMarkers() {
@@ -130,7 +130,7 @@ export class BarChart {
   }
 
   /**
-   *
+   * Validates input parameters at constructor
    * @param {{values: Array, markers: Array}} data
    * @private
    */
