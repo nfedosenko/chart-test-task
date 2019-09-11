@@ -1,0 +1,19 @@
+th,
+td {
+  padding: 15px;
+}
+
+td.chart-cell {
+  min-width: 40%;
+  height: 200px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  margin: 0 auto;
+  width: 100%;
+}
